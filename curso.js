@@ -3,18 +3,14 @@ curso (string), nota de aprovação (number), faltas máximas (number) e uma lis
 estudantes (um array composto pelos alunos criados no passo 1).*/
 
 alunosMatriculados = require('./estudantesMatriculados')
-aluno = require('./alunos').default.default
-calcularMedia = require('./alunos').default.default
-import calcularMedia from Aluno;
-module.exports = curso;
+aluno = require ('./alunos')
 
-const alunosMatriculados = require('./estudantesMatriculados')
+const estudantesMatriculados = require('./estudantesMatriculados')
 
 
-
-const Curso = {
+const curso = { 
     
-    nomeDoCurso: "Programação Ferrativa, destrua seus neuronios",
+    nomeDoCurso: "Programação Ferrativa, me ferrei",
     notaCorte: 7,
     limiteFaltas: 20,
     estudantes: estudantesMatriculados,
@@ -32,7 +28,7 @@ const Curso = {
         const estudantes = this.estudantesMatriculados;
         const atualizacao = [];
 
-        estudantes.forEach.atualizacao.push(alunoNovos)
+        estudantes.forEach.push(alunoNovos)
         this.estudantesMatriculados = atualizacao;
         return atualizacao;     
     },
@@ -42,6 +38,8 @@ const Curso = {
        aluno tem que ter uma média igual ou acima da nota de aprovação e ter menos faltas que
        faltas máximas. Se tiver a mesma quantidade, tem que estar 10% acima da nota de
        aprovação.*/
+
+       
 
     aprovacaoAluno(aluno){
             
@@ -80,11 +78,12 @@ const Curso = {
     listaStatus: function(aluno) {
         
         estudantes.forEach(function(Aluno) {
-        status.push(Curso.aprovacaoAluno(Aluno));});
+        status.push(curso.aprovacaoAluno(Aluno));});
         const estudantes = this.estudantes;
         const status = [];
     }
+    
 
 }
 
-
+export default curso;
