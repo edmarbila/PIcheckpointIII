@@ -1,6 +1,10 @@
 # PIcheckpointIII
 
-executar o arquivo alunos.js (node alunos.js)
-Feito os metodos e parametros das atividades
-Dificuldade em unir arquivos e ler dados nas classes
-Estou pesqusiando para tentar corrigir e melhorar até a correção
+executar o arquivo index.js
+
+vai listar os celulares prontos = true
+celulares que ainda não estão prontos = false
+
+e valor a cobrar dos celulares prontos = soma dos 3 valores dos itens 'valores'.
+
+arquivo concerto.js contem o objeto  consertos com 15 itens.
